@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>설문조사 페이지</title>
+</head>
+<body>
+<!-- html은 값을 보낼수만 있다. 값을 받을 수가 없다 -->
+<!-- 데이터를 받아서 처리하도록 jsp를 사용할것이다 -->
+<!-- 전달방식에는 get과 post방식이 있다 -->
+
+<h1>설문 조사</h1>
+ 아래 항목을 채워주세요.<br><br>
+<b> 신상정보 </b><br>
+
+<form action="survey_result.jsp" method=post>
+<table>
+	<tr>
+		<td>이름</td> 
+		<td><input type="text" name="name"></td>
+	</tr>
+	<tr>
+		<td>전화번호</td>
+		<td><input type="tel" name="phone"></td>
+	</tr>
+	<tr>
+		<td>이메일 주소</td>
+		<td><input type="email" name="email"></td>
+	</tr>
+	<tr>
+		<td>생일</td>
+		<td><input type="date" name="birthday"></td>
+	</tr>
+</table>
+<br>
+
+<b>어떤 경로로 알게 되었습니까?</b><br><br>
+<input type="radio" name="contactVia" value="기사">기사
+<input type="radio" name="contactVia" value="광고">광고
+<input type="radio" name="contactVia" value="기타">기타<br><br>
+
+<b>좋아하는 스포츠는 무엇입니까?</b><br><br>
+<input type="checkbox" name="sports" value="야구">야구
+<input type="checkbox" name="sports" value="골프">골프
+<input type="checkbox" name="sports" value="농구">농구<br>
+<input type="checkbox" name="sports" value="스쿼시">스쿼시
+<input type="checkbox" name="sports" value="볼링">볼링
+<input type="checkbox" name="sports" value="축구">축구<br><br> 
+
+연락방법 
+<select name="contact_option">
+		<option value="email">email
+		<option value="phone" selected>phone
+		<option value="sms" selected>sms
+	</select><br><br>
+	
+<input type="checkbox" name="accept" checked> 개인정보 활용에 동의합니다.<br><br>
+<button type="submit">Submit</button>
+<input type="reset" value="reset">  
+<!-- submit과 reset은 내장되어있는 기능이다 -->
+
+</form>
+</body>
+</html>
