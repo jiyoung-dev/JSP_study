@@ -75,7 +75,7 @@ service call
 ```
 
 - @WebServlet 어노테이션      
-=> 다음은 @WebServlet 어노테이션을 사용해 서블릿 클래스를 구현한 것이다. 어노테이션을 활용하면 위에서 처럼 직접 web.xml을 작성해 매핑하지 않아도된다. 
+=> 다음은 @WebServlet 어노테이션을 사용해 서블릿 클래스를 구현한 것이다. 어노테이션을 활용하면 위에서 처럼 직접 web.xml을 작성해 매핑하지 않아도된다. @WebServlet 어노테이션 기능은 Java 1.5부터 새로 추가된 기능이다. 
 아래 코드에서는 ```@WebServlet("/hiServlet")``` 라고 했는데 톰캣은 이 어노테이션을 확인하여 "해당 Servlet으로 접근하기 위해서는 url에 /hiServlet으로 접근하면 된다"를 매핑시킨다. 
 
 
